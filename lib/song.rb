@@ -11,7 +11,9 @@ class Song
   end
 
   def self.create
-    self.class.new
+    song = self.class.new
+    song.save
+    sond
   end
 
 
