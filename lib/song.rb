@@ -35,11 +35,11 @@ class Song
   end
 
   def self.find_or_create_by_name(name)
-    if @@all.detect {|i| i.name == name } == nil 
+    if @@all.detect {|i| i.name == name } == nil
       self.create_by_name(name)
-    else 
+    else
       @@all.detect {|i| i.name == name }
-    end 
-  end 
+    end
+  end
 
 end
