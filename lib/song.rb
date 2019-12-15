@@ -7,6 +7,6 @@ class Song
   end
 
   def save
-    self.class.all << self
+    self.class.all << self #only way a song will be added is through this method
   end
 end
