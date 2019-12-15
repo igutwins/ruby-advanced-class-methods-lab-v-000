@@ -34,4 +34,12 @@ class Song
     song
   end
 
+  def self.find_or_create_by_name(name)
+    if @@all.detect {|i| i.name == name } == nil 
+      self.create_by_name(name)
+    else 
+      @@all.detect {|i| i.name == name }
+    end 
+  end 
+
 end
